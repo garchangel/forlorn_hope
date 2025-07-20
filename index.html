@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Night City Feedstream"
+---
+
+<section>
+  <h2 style="margin-top:0;">Latest Datapool Downloads</h2>
+  <ul style="list-style:none; padding:0; margin:0;">
+    {% for post in site.posts %}
+      <li style="margin-bottom:2.5rem; padding:1.5rem; border:2px solid #ff003c; background:rgba(10,10,30,0.7); border-radius:8px; box-shadow:0 0 16px #ff003c;">
+        <h3 style="margin-top:0;">
+          <a href="{{ post.url | relative_url }}" style="color:#ff003c; text-shadow:0 0 8px #ff003c, 0 0 16px #ff003c;">
+            {{ post.title }}
+          </a>
+        </h3>
+        <p style="font-size:1.05em; color:#00fff7; margin-bottom:0.6em;">
+          <strong>
+            {{ post.date | date: "%Y-%m-%d" }}
+          </strong>
+          &nbsp;|&nbsp; <span style="color:#fff700;">{{ post.author }}</span>
+        </p>
+        <p style="color:#fff; margin-bottom:0.5em;">
+          {{ post.excerpt | strip_html | truncate: 180 }}
+        </p>
+        <a href="{{ post.url | relative_url }}" style="color:#fff700; font-weight:bold; text-shadow:0 0 8px #fff700;">Slot In &rarr;</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
