@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<article>
+  <h2>{{ page.title }}</h2>
+  <p style="color:#00fff7; font-size:1.05em;">
+    <strong>{{ page.author }}</strong>
+    <span style="color:#fff700;">| {{ page.date | date: "%Y-%m-%d" }}</span>
+  </p>
+  {{ content }}
+</article>
