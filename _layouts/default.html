@@ -12,16 +12,18 @@
     <nav>
       <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
       <a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>About</a>
-      <!-- Add more links as needed -->
+      <!-- Add more nav links as needed -->
     </nav>
   </header>
   <main>
     {{ content }}
   </main>
-  <footer style="text-align:center; padding:2rem; color:#444; font-size:0.95em;">
+  <footer>
     <hr>
-    <span>Theme inspired by <strong>Cyberpunk RED</strong>.<br>
-    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> &amp; <a href="https://github.com/" target="_blank">GitHub Pages</a>.</span>
+    <span>
+      <strong>Cyberpunk RED - Forlorn Hope</strong> &copy; {{ site.time | date: '%Y' }}.
+      Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/" target="_blank">GitHub Pages</a>.
+    </span>
   </footer>
 </body>
 </html>
