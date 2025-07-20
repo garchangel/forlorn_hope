@@ -160,6 +160,7 @@ hr {
   margin: 2em 0;
 }
 
+/* HEADER & FOOTER */
 header, footer {
   background: linear-gradient(90deg, $red 0%, $cyan 100%);
   color: $bg;
@@ -168,6 +169,43 @@ header, footer {
   clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
   box-shadow: 0 0 16px $red;
   border-radius: 0 0 13px 13px;
+}
+
+/* Improved header title for readability */
+header h1 {
+  color: #fff !important;
+  text-shadow:
+    0 0 6px $cyan,
+    0 0 18px $bg,
+    0 0 20px $cyan,
+    0 2px 0 $bg;
+  font-size: 2.8rem;
+  letter-spacing: 0.17em;
+  font-family: 'Orbitron', Arial Black, Arial, sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Optional: Improve .glitch in header */
+header .glitch {
+  color: #fff;
+  text-shadow:
+    2px 0 12px $cyan,
+    -2px 0 12px $red,
+    0 0 8px $cyan,
+    0 0 20px $red;
+}
+
+/* Optional: Nav links in header */
+header nav a {
+  color: #fff;
+  text-shadow: 0 0 8px $cyan;
+  font-weight: bold;
+  margin-right: 1.3em;
+}
+header nav a:hover {
+  color: $yellow;
+  text-shadow: 0 0 12px $yellow;
 }
 
 footer {
@@ -189,6 +227,7 @@ footer {
   background: $bg;
 }
 
+/* Responsive design */
 @media (max-width: 700px) {
   main {
     padding: 1.1rem 0.5rem;
@@ -199,5 +238,8 @@ footer {
   }
   nav {
     gap: 1rem;
+  }
+  header h1 {
+    font-size: 2rem;
   }
 }
