@@ -174,7 +174,7 @@ body .feed-about { font-family: 'Orbitron', monospace, Arial, sans-serif; }
 <br><br>
 <span class="feed-odd">[Online, I am: <span style="color:#00fff7;">a datastream, a glitch, a meme with a pulse.</span>]</span>
 <br>
-<span class="feed-odd">[Offline, I am: <span style="color:#ff2ffb;">an androgynous apparition in bag-lacy layers, face half-lost behind tangled hair and a biohaz mask that reads: "NOT FEED".</span>]</span>
+<span class="feed-odd">[Offline, I am: <span style="color:#ff2ffb;">an apparition in layers, face half-lost behind tangled hair and a biohaz mask that reads: "DO NOT FEED".</span>]</span>
 <br>
 <span style="color:#00fff7;">My voice is scrambled. My feeds are filtered. My shadow is encrypted. No one meets Feed—only the mask, only the stream.</span>
 </div>
