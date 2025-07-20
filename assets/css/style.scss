@@ -4,7 +4,6 @@
 
 // Cyberpunk RED Night City Theme with Glitch
 
-// Color palette
 $bg: #0d0b1f;
 $fg: #f8f8fa;
 $red: #ff003c;
@@ -51,4 +50,154 @@ $magenta: #ff2ffb;
 
 .glitch::after {
   animation: glitch-anim-after 1.28s infinite linear alternate;
-  text-shadow: -2px 0 10px $red, 0
+  text-shadow: -2px 0 10px $red, 0 2px 6px $cyan;
+  top: -2px;
+  left: -2px;
+  opacity: 0.7;
+}
+
+@keyframes glitch-anim {
+  0% { text-shadow: 2px 0 $red, -2px 0 $cyan, 0 0 8px $red, 0 0 20px $red; }
+  20% { text-shadow: -2px 0 $red, 2px 0 $cyan, 0 0 12px $red, 0 0 20px $red; }
+  40% { text-shadow: 2px 2px $cyan, -2px -2px $red, 0 0 20px $red, 0 0 30px $red; }
+  60% { text-shadow: -2px 2px $cyan, 2px -2px $red, 0 0 16px $red, 0 0 24px $red; }
+  80% { text-shadow: 2px 0 $red, -2px 0 $cyan, 0 0 12px $red, 0 0 20px $red; }
+  100% { text-shadow: 0 0 8px $red, 0 0 20px $red; }
+}
+@keyframes glitch-anim-before {
+  0% { clip-path: inset(0 0 60% 0); }
+  20% { clip-path: inset(60% 0 0 0); }
+  40% { clip-path: inset(0 30% 40% 0); }
+  60% { clip-path: inset(40% 0 0 30%); }
+  80% { clip-path: inset(0 60% 0 0); }
+  100% { clip-path: inset(0 0 50% 0); }
+}
+@keyframes glitch-anim-after {
+  0% { clip-path: inset(60% 0 0 0); }
+  20% { clip-path: inset(0 0 60% 0); }
+  40% { clip-path: inset(0 0 40% 30%); }
+  60% { clip-path: inset(30% 40% 0 0); }
+  80% { clip-path: inset(0 0 60% 0); }
+  100% { clip-path: inset(50% 0 0 0); }
+}
+
+// Main cyberpunk styling
+body {
+  background: $bg !important;
+  color: $fg !important;
+  font-family: 'Orbitron', Arial Black, Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  letter-spacing: 0.04em;
+  font-size: 18px;
+}
+
+main, article, .post, .page, .content {
+  background: rgba(22,12,32,0.94) !important;
+  border: 2.5px solid $red;
+  border-radius: 13px;
+  box-shadow: 0 0 30px $red;
+  padding: 2rem 1.5rem;
+  margin: 2rem auto 3rem auto;
+  max-width: 900px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $red;
+  text-shadow: 0 0 8px $red, 0 0 20px $red;
+  font-family: 'Orbitron', Arial Black, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h2, h3 {
+  color: $cyan;
+  text-shadow: 0 0 8px $cyan, 0 0 20px $cyan;
+}
+h4, h5, h6 {
+  color: $yellow;
+  text-shadow: 0 0 8px $yellow, 0 0 20px $yellow;
+}
+
+a {
+  color: $red;
+  text-shadow: 0 0 8px $red, 0 0 12px $red;
+  font-weight: bold;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+a:hover {
+  color: $cyan;
+  text-shadow: 0 0 12px $cyan, 0 0 18px $cyan;
+}
+
+ul, ol {
+  margin-left: 2rem;
+}
+
+code, pre {
+  background: #191430;
+  color: $yellow;
+  padding: 0.3em 0.7em;
+  border-radius: 5px;
+  font-family: 'Fira Mono', monospace;
+  font-size: 0.98em;
+}
+
+blockquote {
+  background: rgba(0, 255, 247, 0.13);
+  border-left: 5px solid $cyan;
+  padding: 1.1em 2em;
+  color: $cyan;
+  font-style: italic;
+  margin: 2em 0;
+  border-radius: 7px;
+  box-shadow: 0 0 12px $cyan;
+}
+
+hr {
+  border: 0;
+  border-top: 2.5px solid $red;
+  margin: 2em 0;
+}
+
+header, footer {
+  background: linear-gradient(90deg, $red 0%, $cyan 100%);
+  color: $bg;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+  box-shadow: 0 0 16px $red;
+  border-radius: 0 0 13px 13px;
+}
+
+footer {
+  text-align: center;
+  color: #aaa;
+  font-size: 1em;
+  padding: 2rem 0 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 2.5px solid $yellow;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $red;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: $bg;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 1.1rem 0.5rem;
+    max-width: 98vw;
+  }
+  header {
+    padding: 1.3rem 0.5rem 0.6rem 0.7rem;
+  }
+  nav {
+    gap: 1rem;
+  }
+}
