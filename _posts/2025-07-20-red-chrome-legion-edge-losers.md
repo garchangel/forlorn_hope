@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "🤡 RED CHROME LEGION: FROM EDGERUNNERS TO EDGE-LOSERS 🤡"
-date: 2025-07-21
+date: 2025-07-20
 author: Feed
 tags: [Night City, Red Chrome Legion, Combat Zone, Meme, Warning]
 ---
