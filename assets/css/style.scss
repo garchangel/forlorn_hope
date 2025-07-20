@@ -1,5 +1,10 @@
+---
+---
 @import url('https://fonts.googleapis.com/css?family=Orbitron:wght@700;900&display=swap');
 
+// Cyberpunk RED Night City Theme with Glitch
+
+// Color palette
 $bg: #0d0b1f;
 $fg: #f8f8fa;
 $red: #ff003c;
@@ -7,168 +12,43 @@ $cyan: #00fff7;
 $yellow: #fff700;
 $magenta: #ff2ffb;
 
-body {
-  background: $bg;
-  color: $fg;
-  font-family: 'Orbitron', Arial Black, Arial, sans-serif;
-  margin: 0;
-  min-height: 100vh;
-  letter-spacing: 0.04em;
-  font-size: 18px;
-}
-
-header {
-  background: linear-gradient(90deg, $red 0%, $cyan 100%);
-  padding: 2.5rem 1rem 1.5rem 2rem;
-  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
-  box-shadow: 0 0 16px $red;
-  margin-bottom: 1.5rem;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.8rem;
-  letter-spacing: 0.17em;
-  color: $bg;
-  text-transform: uppercase;
-  text-shadow: none;
-}
-
-nav {
-  margin-top: 1rem;
-  display: flex;
-  gap: 2rem;
-}
-nav a {
-  color: $bg;
-  background: $cyan;
-  font-size: 1.1rem;
-  padding: 0.4rem 1.2rem;
-  border-radius: 6px;
-  font-weight: bold;
-  border: 2px solid transparent;
-  transition: border 0.2s, background 0.2s, color .2s;
-  text-shadow:
-    0 0 8px $cyan,
-    0 0 16px $cyan;
-}
-nav a.active, nav a:hover {
-  border-color: $red;
-  background: $red;
-  color: $fg;
-  text-shadow:
-    0 0 8px $red,
-    0 0 16px $red;
-}
-
-main {
-  max-width: 900px;
-  margin: 2rem auto 3rem auto;
-  background: rgba(22, 12, 32, 0.92);
-  border: 2.5px solid $red;
-  border-radius: 13px;
-  box-shadow: 0 0 30px $red;
-  padding: 2.2rem 1.5rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
+// --------- GLITCH EFFECT ---------
+.glitch {
+  position: relative;
+  color: $red;
   font-family: 'Orbitron', Arial Black, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: $red;
   text-shadow:
+    2px 0 12px $red,
+    -2px 0 12px $cyan,
     0 0 8px $red,
     0 0 20px $red;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  animation: glitch-anim 1.3s infinite linear alternate;
+  z-index: 2;
+  display: inline-block;
 }
-h2, h3 {
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
   color: $cyan;
-  text-shadow:
-    0 0 8px $cyan,
-    0 0 20px $cyan;
-}
-h4, h5, h6 {
-  color: $yellow;
-  text-shadow:
-    0 0 8px $yellow,
-    0 0 20px $yellow;
+  z-index: 1;
+  pointer-events: none;
 }
 
-a {
-  color: $red;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.2s, text-shadow 0.2s;
-  text-shadow: 0 0 8px $red, 0 0 12px $red;
-}
-a:hover {
-  color: $cyan;
-  text-shadow: 0 0 12px $cyan, 0 0 18px $cyan;
+.glitch::before {
+  animation: glitch-anim-before 1.32s infinite linear alternate-reverse;
+  text-shadow: 2px 0 10px $cyan, 0 2px 6px $red;
+  top: 2px;
+  left: 2px;
+  opacity: 0.7;
 }
 
-ul, ol {
-  margin-left: 2rem;
-}
-
-code, pre {
-  background: #191430;
-  color: $yellow;
-  padding: 0.3em 0.7em;
-  border-radius: 5px;
-  font-family: 'Fira Mono', monospace;
-  font-size: 0.98em;
-}
-
-blockquote {
-  background: rgba(0, 255, 247, 0.13);
-  border-left: 5px solid $cyan;
-  padding: 1.1em 2em;
-  color: $cyan;
-  font-style: italic;
-  margin: 2em 0;
-  border-radius: 7px;
-  box-shadow: 0 0 12px $cyan;
-}
-
-hr {
-  border: 0;
-  border-top: 2.5px solid $red;
-  margin: 2em 0;
-}
-
-footer {
-  text-align: center;
-  color: #aaa;
-  font-size: 1em;
-  padding: 2rem 0 1.5rem 0;
-  margin-top: 2rem;
-  background: linear-gradient(90deg, $red 0%, $cyan 100%);
-  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
-  box-shadow: 0 0 16px $red;
-  border-top: 2.5px solid $yellow;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $red;
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  background: $bg;
-}
-
-/* Responsive design */
-@media (max-width: 700px) {
-  main {
-    padding: 1.1rem 0.5rem;
-    max-width: 98vw;
-  }
-  header {
-    padding: 1.3rem 0.5rem 0.6rem 0.7rem;
-  }
-  nav {
-    gap: 1rem;
-  }
-}
+.glitch::after {
+  animation: glitch-anim-after 1.28s infinite linear alternate;
+  text-shadow: -2px 0 10px $red, 0
