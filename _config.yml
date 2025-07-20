@@ -1,5 +1,11 @@
-title: "Cyberpunk RED - Forlorn Hope"
-description: "A in-game blog feed"
+title: "Night City Feedstream"
+description: "The neon-lit underbelly of Night City—Cyberpunk RED news, warnings, and rumors."
 theme: null
 sass:
   style: compressed
+
+# Exclude files/folders you don't want to publish
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
