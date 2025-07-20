@@ -114,3 +114,16 @@ hr {
   width: 8px;
   background: $primary-bg;
 }
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 $accent-neon, -2px 0 $neon-cyan; }
+  20% { text-shadow: -2px 0 $accent-neon, 2px 0 $neon-cyan; }
+  40% { text-shadow: 2px 0 $neon-cyan, -2px 0 $accent-neon; }
+  60% { text-shadow: -2px 0 $neon-cyan, 2px 0 $accent-neon; }
+  80% { text-shadow: 2px 0 $accent-neon, -2px 0 $neon-cyan; }
+  100% { text-shadow: 0 0 $accent-neon, 0 0 $neon-cyan; }
+}
+
+h1, h2 {
+  animation: glitch 1.7s infinite linear alternate-reverse;
+}
