@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 title: "☠️ CRAWLING COBRAS GET STOMPED: GANG BITES OFF MORE THAN THEY CAN CHEW ☠️"
@@ -91,4 +90,3 @@ Stay tuned, Night City, and remember:<br>
 <span style="color:#00fff7;">#ProfessionalsAtWork</span>
 <span style="color:#ff003c;">#FeedWitnessed</span>
 <span style="color:#fff700;">#CoffeeAfterCarnage</span>
-```
