@@ -3,13 +3,11 @@
 layout: post
 title: "☠️ CRAWLING COBRAS GET STOMPED: GANG BITES OFF MORE THAN THEY CAN CHEW ☠️"
 date: 2025-12-14
-categories: Feed
-author: Night City Datapool
+author: Feed
+tags: [Night City, Crawling Cobras, Storage Heist, Professional Work, Gang Fail]
 ---
 
-> |  |  |
-> | --- | --- |
-> | **By Feed | Night City Datapool** |
+> **By Feed | Night City Datapool**
 
 ---
 
@@ -25,8 +23,10 @@ So there I was, trailing an edgerunner crew on a routine security check—some c
 
 Picture this shitshow: Storage container's blown wide open, smoke still drifting, and three Cobra dickheads are elbow-deep in grand theft auto when the crew rolls up.
 
-**COMBAT FOOTAGE TIMESTAMP:**  
-"Cobra_Cleanup_Dec14.mp4" — *Watch street trash learn the difference between posturing and actual combat.*
+<div style="border: 2px solid #ff003c; background: #1a1a26; color: #00fff7; font-family:Orbitron,Arial,sans-serif; font-size:1.1em; padding:1em 1.5em; border-radius: 6px; margin: 2em 0; text-shadow: 0 0 10px #ff003c;">
+<strong>COMBAT FOOTAGE:</strong><br>
+[DATASTREAM: "Cobra_Cleanup_Dec14.mp4" — <em>Watch street trash learn the difference between posturing and actual combat.</em>]
+</div>
 
 **0:00** - Violette doesn't even hesitate. SMG comes up, *brrrrap*, and one Cobra's down before his chrome even registers the threat  
 **0:03** - Second ganger's too stupid to understand he just watched his choom get flatlined—actually tries talking shit  
@@ -72,9 +72,12 @@ Not celebrating, not bragging, not even looting the bodies. Just decided that so
 
 ---
 
-**Message to the Crawling Cobras:** Maybe workshop those street names. And your entire approach to life. Joshua Travel's currently reconsidering his career choices—you should too.
+Night City's verdict? When you name yourself after a snake, make sure you've got the venom to back it up. Otherwise you're just a worm with delusions of grandeur.
 
-**Message to everyone else:** When professionals are on the job, don't be the speed bump in their way.
+---
+
+Stay tuned, Night City, and remember:<br>
+<strong>Professional edgerunners don't flex—they deliver.</strong>
 
 ---
 
@@ -82,10 +85,10 @@ Not celebrating, not bragging, not even looting the bodies. Just decided that so
 
 ---
 
-#CrawlingCobraFail
-#JoshuaTravel
-#WorstStreetNameEver
-#ProfessionalsAtWork
-#FeedWitnessed
-#CoffeeAfterCarnage
+<span style="color:#ff003c;">#CrawlingCobraFail</span>
+<span style="color:#00fff7;">#JoshuaTravel</span>
+<span style="color:#fff700;">#WorstStreetNameEver</span>
+<span style="color:#00fff7;">#ProfessionalsAtWork</span>
+<span style="color:#ff003c;">#FeedWitnessed</span>
+<span style="color:#fff700;">#CoffeeAfterCarnage</span>
 ```
