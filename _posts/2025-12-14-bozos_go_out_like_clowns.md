@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 title: "🤡 BOZO LOVE BOMBING: GLITTER GRENADES AND STOLEN MECHS 🤡"
@@ -101,4 +100,3 @@ Stay safe out there, Night City, and remember:<br>
 <span style="color:#00fff7;">#ForlornHopeSurvives</span>
 <span style="color:#ff003c;">#FeedWitnessed</span>
 <span style="color:#fff700;">#ClownCarCrash</span>
-```
